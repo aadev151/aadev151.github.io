@@ -106,6 +106,9 @@ a.hover {
 	text-decoration: underline;
 }
 
-blacklivesmatter {
+.blacklivesmatter {
+	font-align: center;
+}
+.blmlogo {
 	font-size: 32px;
 }

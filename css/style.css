@@ -88,6 +88,24 @@ h2 {
 	letter-spacing: -1px;
 }
 
-.about {
+.content {
 	text-align: center;
 	font-family: fantasy;
+}
+
+a.link {
+	color: #42f5d1;
+	text-decoration: none;
+}
+a.visited {
+	color: #3fccb0;
+	text-decoration: none;	
+}
+a.hover {
+	color: #42f5d1;
+	text-decoration: underline;
+}
+
+blacklivesmatter {
+	font-size: 32px;
+}

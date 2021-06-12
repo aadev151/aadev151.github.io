@@ -153,4 +153,5 @@ a:hover {
 	font-family: helvetica;
 	font-size: 19px;
 	margin-left: 3%;
+	box-shadow: .0em .1em .3em .0em;
 }

@@ -81,7 +81,9 @@ a, a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-	--background-color: rgb(30, 30, 30);	
+	:root {
+		--background-color: rgb(30, 30, 30);	
+	}
 }
 
 body {

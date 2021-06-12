@@ -75,7 +75,7 @@ a, a:hover {
 
 /* The end of the borrowed code */
 
-::root {
+:root {
 	color-scheme: light dark;
 }
 

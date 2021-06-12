@@ -77,10 +77,16 @@ a, a:hover {
 
 :root {
 	color-scheme: light dark;
+	--background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+	--background-color: rgb(30, 30, 30);	
 }
 
 body {
-  margin-left: 3%;
+  	margin-left: 3%;
+  	background-color: var(--background-color);
 }
 
 h1 {
@@ -98,11 +104,11 @@ h2 {
 
 .content {
 	font-family: fantasy;
-  margin-left: 6%;
-  margin-right: 9%;
+  	margin-left: 6%;
+  	margin-right: 9%;
 }
 .center {
-  text-align: center;
+  	text-align: center;
 }
 
 a:link {
@@ -119,20 +125,20 @@ a:hover {
 }
 
 .link {
-  color: blue;
-  text-decoration: underline;
+ 	color: blue;
+ 	text-decoration: underline;
 }
 .link:hover {
-  color: blue;
-  text-decoration: underline;
+  	color: blue;
+  	text-decoration: underline;
 }
 
 .footer {
-  text-align: center;
-  font-family: helvetica;
-  font-size: 18px;
+  	text-align: center;
+  	font-family: helvetica;
+  	font-size: 18px;
 }
 .blm_logo {
-	font-size: 52px;
+	font-size: 104px;
 	text-align: center;
 }

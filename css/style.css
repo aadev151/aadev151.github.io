@@ -70,10 +70,14 @@ a, a:hover {
 	-moz-transition: all ease-in 0.5s;
 	-webkit-transition: all ease-in 0.5s;
 	-o-transition: all ease-in 0.5s;
+  text-decoration: none;
 }
 
 /* The end of the borrowed code */
 
+body {
+  margin-left: 3%;
+}
 
 h1 {
 	font-family: helvetica;
@@ -89,19 +93,23 @@ h2 {
 }
 
 .content {
-	text-align: center;
-	font-family: sans-serif;
+	font-family: fantasy;
+  margin-left: 6%;
+  margin-right: 9%;
+}
+.center {
+  text-align: center;
 }
 
-a.link {
+a:link {
 	color: #42f5d1;
 	text-decoration: none;
 }
-a.visited {
+a:visited {
 	color: #3fccb0;
 	text-decoration: none;	
 }
-a.hover {
+a:hover {
 	color: #42f5d1;
 	text-decoration: underline;
 }
@@ -109,4 +117,19 @@ a.hover {
 .blacklivesmatter {
 	font-size: 52px;
 	font-align: center;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+.link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  font-family: helvetica;
+  font-size: 18px;
 }

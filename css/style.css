@@ -149,7 +149,7 @@ a:hover {
 	left: 0; top: 0;
     	position: fixed;
     	width: 100%;
-	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  	-moz-box-shadow:    3px 3px 5px 6px #ccc;
-  	box-shadow:         3px 3px 5px 6px #ccc;
+	background-color: var(--background-color);
+	font-family: helvetica;
+	font-size: 19px;
 }

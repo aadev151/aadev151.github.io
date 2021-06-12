@@ -118,11 +118,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-.blacklivesmatter {
-	font-size: 52px;
-	font-align: center;
-}
-
 .link {
   color: blue;
   text-decoration: underline;
@@ -139,5 +134,5 @@ a:hover {
 }
 .blm_logo {
 	font-size: 52px;
-	font-align: center;
+	text-align: center;
 }

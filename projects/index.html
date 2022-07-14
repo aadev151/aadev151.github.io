@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-prefers-dark">
+    <link rel="icon" href="https://raw.githubusercontent.com/aadev151/aadev151.github.io/master/my_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My projects | AADEV151.TECH</title>
+
+    <style>
+        @media screen and (max-width: 1050px) {
+            .card {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                min-width: 300px;
+            }
+        }
+        @media screen and (min-width: 1051px) {
+            .card {
+                margin-left: auto;
+                margin-right: auto;
+                width: calc(50% - 15px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-fullheight">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <p class="navbar-item non-hoverable">
+                        <a href="/">
+                            <strong>Alex Anisimov</strong>
+                        </a>
+                    </p>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">              
+                        <a class="navbar-item" href="#" onclick="alert('#BlackLivesMatter. I am against racism and police brutality, and this sign is shown in solidarity with the Black community.')">
+                            ✊🏿 #BLM
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+                      if ($navbarBurgers.length > 0) {
+                          $navbarBurgers.forEach( el => {
+                              el.addEventListener('click', () => {
+                                  const target = el.dataset.target;
+                                  const $target = document.getElementById(target);
+                                  el.classList.toggle('is-active');
+                                  $target.classList.toggle('is-active');
+
+                              });
+                          });
+                      }
+
+                });
+            </script>
+
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <h1 class="title" style="font-size: 50px; font-weight: 600;">My projects</h1>
+                <h2 class="subtitle">__________</h2>
+                <h2 class="subtitle" style="font-size: 30px">Making the world a better place</h2>
+                <a class="link" style="font-size: 19px; text-decoration: underline; text-decoration-style: dashed;" id="trigger" onclick="about = document.getElementById('about'); trigger = document.getElementById('trigger'); if (about.hidden) { about.hidden = false; trigger.innerHTML = 'Hide &#9650;' } else { about.hidden = true; trigger.innerHTML = 'About my projects &#9660;' }">About my projects &#9660;</a>
+                <div id="about" style="width: 80%; min-width: 265px; margin-left: auto; margin-right: auto; font-size: 20px" hidden>
+                    As a programmer, I <a style="background: linear-gradient(to right, deeppink, blue); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">adore</a> Python, but also code in Swift, HTML&CSS&JS, and c++. My dream is to become a backend developer, yet I can also create some frontend (in fact, this website is written by me, f.i. ☺️). I am also currently having an experience of studying machine learning and artificial intelligence with a Russian top It company, <a href="https://yandex.com/company" target="_blank">Yandex</a>.
+                </div>
+                <br><br><br>
+
+                <div class="tabs is-centered is-boxed">
+                    <ul>
+                        <li class="is-active" onclick="toggleFinished()" id="finishedTab"><a>Fininshed</a></li>
+                        <li onclick="toggleInDevelopment()" id="developmentTab"><a>In development</a></li>
+                        <li onclick="toggleIdeas()" id="ideasTab"><a>Ideas</a></li>
+                    </ul>
+                </div>
+                
+                <div id="finished">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="app.png" alt="HelpUnicorn logo" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">HelpUnicorn</p>
+                                    <p class="subtitle is-6"><a href="http://helpunicorn.ru" target="_blank">http://helpunicorn.ru</a></p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                My most successful project. This is a website that unites welfare funds and IT-specialists. Any charity could post a task for a developer, designer, or PR-manager, who is going to perform it absolutely free of charge. You can read more about HelpUnicorn <a href="helpunicorn">here</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="http://neighbors.pythonanywhere.com/static/logo.png" alt="Project Neighbors logo">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Project Neighbors</p>
+                                    <p class="subtitle is-6"><a href="https://neighbors.pythonanywhere.com/" target="_blank">https://neighbors.pythonanywhere.com</a></p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                This is a "swapper" for neighbors. I've creted it as my final project in Silicon Valley enterpreneuship program. During the 2020 lockdown, it was topical to have a network of people living next to each other, who can exchange some products with each other (e.g. I give you a Monopoly, and you boil some coffee for me).
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <i class="fa fa-link" style="color: darkorange; font-size: 62px"></i>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">prevlink.js</p>
+                                    <p class="subtitle is-6"><a href="https://aadev151.github.io/prevlink" target="_blank">https://aadev151.github.io/prevlink</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                This is a JS web library for creating previews for links on your websites.
+                                <br>
+                                <a href="https://aadev151.github.io/prevlink/demo" target="_blank">Demo &rightarrow;</a>
+                                &nbsp;&nbsp;
+                                <a href="https://aadev151.github.io/prevlink/docs" target="_blank">Docs &rightarrow;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96" style="background-color: whitesmoke; border-radius: 10px;">
+                                        <p style="font-size: 30px;">🎄🎉☃️</p>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Xmas Quest</p>
+                                    <p class="subtitle is-6"><a href="https://xmas.aadev151.repl.co" target="_blank">https://xmas.aadev151.repl.co</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                An online multiplayer game for Christmas. It only has 2 levels, but you can suggest some new on <a href="https://github.com/aadev151/xmas-quest" target="_blank">Github</a> :)
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96" style="background-color: lightskyblue; border-radius: 10px;">
+                                        <p style="font-size: 60px;">🏥</p>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Hospital Management System</p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                A termianl app that allows you to control a clinic (register new doctors/clients, make appointments, and write diagnoses) written in c++.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://mp3-converter-online.com/buttons/converter.svg">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">MP3 player</p>
+                                    <p class="subtitle is-6"><a href="https://github.com/aadev151/mp3-player" target="_blank">https://github.com/aadev151/mp3-player</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                This is my first work made for my Yandex IT-courses (final PyQT project). Well, it's in Russian, but I'm currently working on its translation.
+                                <br>
+                                <p style="font-size: 13px; text-align: left;">Image credit: mp3-converter-online.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="VK_Compact_Logo.png">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">A chatbot for food delivery</p>
+                                    <p class="subtitle is-6"><a href="https://github.com/aadev151/ru-foodbot" target="_blank">https://github.com/aadev151/ru-foodbot</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                There was a period in my life when my Mom delivered food to me every Saturday since I was at school till 7pm. I decided to make some automation for it and start a <a href="https://vk.com" target="_blank">VK</a> bot, sending my lunch wishes to my Mom. It has my settings, but you can easily change them, following the instruction in README. And yes, the project is as well in Russian.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://raw.githubusercontent.com/aadev151/squid-pygame/master/app/data/icon.png" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Squid Pygame</p>
+                                    <p class="subtitle is-6"><a href="https://github.com/aadev151/squid-pygame" target="_blank">https://github.com/aadev151/squid-pygame</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                My second Yandex project. It was inspired by a hit Netflix series, "Squid Game".
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="VK_Compact_Logo.png">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">A guide to create a chatbot</p>
+                                    <p class="subtitle is-6"><a href="https://vk.aadev151.repl.co" target="_blank">https://vk.aadev151.repl.co</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                And final of my more-or-less-large projects is a step-by-step tutorial on how to make a VK chatbot. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="in-development" hidden>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="app.png" alt="HelpUnicorn logo" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">HelpUnicorn apps</p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                My team and I are now working on developing an iOS, an Android, and a Huawei app that will have the same functionality as HelpUnicorn website. In fact, the iOS app is finished already, but it's waiting for the funding.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="app.png" alt="HelpUnicorn logo" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">HelpUnicorn Telegram bot</p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                We are also developing a Telegram bot with the same features.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="ideas" hidden>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="quickpay.png" alt="QuickPay logo" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">QuickPay app</p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                An app that allows people to make card-to-card transfers with one click. <a href="quickpay" target="_blank">Learn more</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96" style="background-color: whitesmoke; border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Online chat with urologists / gynecologists</p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                Any person may feel awkward and uncomfortable going to such doctors. It might be a great challenge to get over oneself and tell about your intimate problems to an unknown person. So with this chat, any person will be able to consult with specialists anonymously and see, whether she or he has a serious health problem or it's just something that one can solve herself.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <a style="background: linear-gradient(to right, red, deeppink, darkorange); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 60px;">.AI</a>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Musiclab.AI</p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                A tool, which will help musicians enhance the quality of their songs or create remixes with AI.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://spokesman-recorder.com/wp-content/uploads/2018/07/N-Word.jpg" style="border-radius: 10px;">                                        
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">N-Word extractor</p>
+                                    <p class="subtitle is-6">Image: <a href="https://spokesman-recorder.com/2018/07/20/that-n-word-again/" target="_blank">Minnesota Spokespan Recorder</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                While some people may love to listen to explicit songs, all clear versions delete <i>other</i> cursing words as well. This tool will be made for people, who love "brutal" songs, but wouldn't offend Black people's feelings. 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script>
+                    var finished = document.getElementById('finished')
+                    var development = document.getElementById('in-development')
+                    var ideas = document.getElementById('ideas')
+
+                    var finishedTab = document.getElementById('finishedTab')
+                    var developmentTab = document.getElementById('developmentTab')
+                    var ideasTab = document.getElementById('ideasTab')
+
+                    function toggleFinished() {
+                        finished.hidden = false
+                        finishedTab.classList.add('is-active')
+                        developmentTab.classList.remove('is-active')
+                        ideasTab.classList.remove('is-active')
+                        development.hidden = ideas.hidden = true 
+                    }
+                    function toggleInDevelopment() {
+                        development.hidden = false
+                        developmentTab.classList.add('is-active')
+                        finishedTab.classList.remove('is-active')
+                        ideasTab.classList.remove('is-active')
+                        finished.hidden = ideas.hidden = true 
+                    }
+                    function toggleIdeas() {
+                        ideas.hidden = false
+                        ideasTab.classList.add('is-active')
+                        developmentTab.classList.remove('is-active')
+                        finishedTab.classList.remove('is-active')
+                        development.hidden = finished.hidden = true 
+                    }
+                </script>
+
+            </div>
+        </div>
+        
+    </section>
+</body>
+
+</html>

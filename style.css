@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+html, body {
+    background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+    html, body {
+        cursor: none;
+    }
+}
+
+.image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    padding-top: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #888;
+    font-family: 'Unbounded', cursive;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 837px) {
+    .text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .text {
+        font-size: 20px;
+    }
+}
+
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #0d3cea;
+    border-radius: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    transition: transform .3s ease;
+    pointer-events: none;
+    transform-origin: center center;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grow {
+    transform: scale(13);
+    background: white;
+    mix-blend-mode: difference;
+    z-index: 0;
+    border: none;
+}

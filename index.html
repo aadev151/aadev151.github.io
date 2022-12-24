@@ -1,180 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="color-scheme" content="dark light">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma-prefers-dark">
-    <link rel="icon" href="https://raw.githubusercontent.com/aadev151/aadev151.github.io/master/my_logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>AADEV151. A personal website of Alex Anisimov</title>
-    <style>
-        .box {
-            border: 2px solid black;
-            border-radius: 10px;
-            box-shadow: .0em .0em .3em .0em;
-            transition: 0.3s;
-            -webkit-transition: 0.3s;
-        }
-        .box:hover {
-            cursor: pointer;
-            box-shadow: .0em .0em .5em .0em;
-        }
-        .not4mobile {
-            display: inline-block;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: linear-gradient(to bottom right, black, grey, white);
-            }
-            .box {
-                border: 2px solid white;
-                background-color: #888;
-            }
-            a.social:link, a.social:visited {
-                color: black;
-            }
-        }
-        @media (prefers-color-scheme: light) {
-            body {
-                background: linear-gradient(to right, grey, white);
-            }
-            .box {
-                background-color: #eee;
-            }
-        }  
-
-        @media screen and (max-width: 899px) {
-            .bottomBtn {
-                width: 100%;
-            }
-            .not4mobile {
-                display: none;
-            }
-        }
-        @media screen and (min-width: 900px) {
-            .bottomBtn {
-                width: calc(50% - 15px);
-                display: inline-block;
-            }
-        }
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>insane</title>
 </head>
-
 <body>
     <section class="hero is-fullheight">
-        <div class="container">
-            <nav class="navbar">
-                <div class="navbar-brand">
-                    <p class="navbar-item non-hoverable">
-                        <a href="/">
-                            <strong>Alex Anisimov</strong>
-                        </a>
-                    </p>
-
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-
-                <div id="navMenu" class="navbar-menu">
-                    <div class="navbar-end">              
-                        <a class="navbar-item" href="#" onclick="alert('#BlackLivesMatter. I am against racism and police brutality, and this sign is shown in solidarity with the Black community.')">
-                            ✊🏿 #BLM
-                        </a>
-                    </div>
-                </div>
-            </nav>
-
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-                      if ($navbarBurgers.length > 0) {
-                          $navbarBurgers.forEach( el => {
-                              el.addEventListener('click', () => {
-                                  const target = el.dataset.target;
-                                  const $target = document.getElementById(target);
-                                  el.classList.toggle('is-active');
-                                  $target.classList.toggle('is-active');
-
-                              });
-                          });
-                      }
-
-                });
-            </script>
-
-        </div>
-
         <div class="hero-body">
             <div class="container has-text-centered">
-
-                <figure class="image is-128x128" style="margin-left: auto; margin-right: auto;">
-                    <img class="is-rounded" src="me.jpeg">
-                </figure>
-               
-                <h1 class="title" style="font-weight: 700; font-size: 40px">
-                    aadev151
-                </h1>
-                <h2 class="subtitle" style="font-size: 24px">
-                    Alex Anisimov
-                </h2>
-
-                <br>
-                <br>
-
-                <div style="width: 90%; margin-left: auto; margin-right: auto;">
-                    <div class="box" onclick="window.location.href = '/projects'">
-                        <h1 class="title">My projects &rightarrow;</h1>
-                    </div>
-
-                    <div style="width: 100%;">
-                        <div class="box bottomBtn" onclick="window.location.href = '/hobbies'">
-                            <h1 class="title">My hobbies &rightarrow;</h1>
-                        </div>
-                        
-                        <div class="not4mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-                        <div class="box bottomBtn" onclick="window.location.href = '/achievements'">
-                            <h1 class="title">My achievements &rightarrow;</h1>
-                        </div>
-                    </div>
+                <div class="image">
+                    <img src="baddest.png" class="cursor-scale">
                 </div>
-
+                <div class="text cursor-scale">
+                    Делаю сайты на заказ, зашибаю бабки, крашу ногти и прожигаю жизнь
+                </div>
             </div>
         </div>
-
-        <div style="margin-bottom: 40px; font-size: 20px; text-align: center; color: white;">
-            <a href="https://twitter.com/aadev151" target="_blank" style="display: inline-block;" class="social">
-                <i class="fa fa-twitter"></i>
-            </a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="http://facebook.com/alex.anisimov.77964" target="_blank" style="display: inline-block;" class="social">
-                <i class="fa fa-facebook"></i>
-            </a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/aadev151" target="_blank" style="display: inline-block;" class="social">
-                <i class="fa fa-github"></i>
-            </a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="https://vk.com/aadev151" target="_blank" style="display: inline-block;" class="social">
-                <i class="fa fa-vk"></i>
-            </a>      
-
-            <div style="color: black; font-size: 14px; font-family: helvetica; width: 300px; margin-right: 15px; margin-left: auto;">
-                BTW, the site's color palette is dependent on your device theme. Try to change it 😉
-            </div>
-            
-        </div>
-        
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script>
+        var width = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+        
+        if (width > 800) {
+            document.write('<div class="cursor"></div>');
+            document.write('<scr' + 'ipt src="cursor.js"></scr' + 'ipt>');
+        }
+    </script>
 </body>
-
-</html>

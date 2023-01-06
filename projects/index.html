@@ -12,6 +12,10 @@
     <title>My projects | AADEV151.TECH</title>
 
     <style>
+        img {
+            pointer-events: none;
+        }
+
         @media screen and (max-width: 1050px) {
             .card {
                 width: 80%;
@@ -50,7 +54,7 @@
 
                 <div id="navMenu" class="navbar-menu">
                     <div class="navbar-end">              
-                        <a class="navbar-item" href="#" onclick="alert('#BlackLivesMatter. I am against racism and police brutality, and this sign is shown in solidarity with the Black community.')">
+                        <a class="navbar-item">
                             ✊🏿 #BLM
                         </a>
                     </div>
@@ -86,7 +90,9 @@
                 <h2 class="subtitle" style="font-size: 30px">Making the world a better place</h2>
                 <a class="link" style="font-size: 19px; text-decoration: underline; text-decoration-style: dashed;" id="trigger" onclick="about = document.getElementById('about'); trigger = document.getElementById('trigger'); if (about.hidden) { about.hidden = false; trigger.innerHTML = 'Hide &#9650;' } else { about.hidden = true; trigger.innerHTML = 'About my projects &#9660;' }">About my projects &#9660;</a>
                 <div id="about" style="width: 80%; min-width: 265px; margin-left: auto; margin-right: auto; font-size: 20px" hidden>
-                    As a programmer, I <a style="background: linear-gradient(to right, deeppink, blue); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">adore</a> Python, but also code in Swift, HTML&CSS&JS, and c++. My dream is to become a backend developer, yet I can also create some frontend (in fact, this website is written by me, f.i. ☺️). I am also currently having an experience of studying machine learning and artificial intelligence with a Russian top It company, <a href="https://yandex.com/company" target="_blank">Yandex</a>.
+                    I strive to use programming as a tool to better the planet. Whether helping nonprofits, reducing plastic waste, or simply putting smiles on people's faces, I believe that coding can be really beneficial.
+                    <br>
+                    As a programmer, I <a style="background: linear-gradient(to right, deeppink, blue); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">adore</a> Python, but also code in Swift, HTML&CSS&JS, and c++. I am not yet sure about who I want to become, but most of my projects are concenred with full-stack development.
                 </div>
                 <br><br><br>
 
@@ -104,17 +110,17 @@
                             <div class="media">
                                 <div class="media-left">
                                     <figure class="image is-96x96">
-                                        <img src="app.png" alt="HelpUnicorn logo" style="border-radius: 10px;">
+                                        <img src="https://helpunicorn.pythonanywhere.com/static/app_.png" alt="HelpUnicorn logo" style="border-radius: 10px; height: 96px;">
                                     </figure>
                                 </div>
                                 <div class="media-content">
                                     <p class="title is-4">HelpUnicorn</p>
-                                    <p class="subtitle is-6"><a href="http://helpunicorn.ru" target="_blank">http://helpunicorn.ru</a></p>
+                                    <p class="subtitle is-6"><a href="https://helpunicorn.pythonanywhere.com" target="_blank">https://helpunicorn.pythonanywhere.com</a></p>
                                 </div>
                             </div>
                     
                             <div class="content">
-                                My most successful project. This is a website that unites welfare funds and IT-specialists. Any charity could post a task for a developer, designer, or PR-manager, who is going to perform it absolutely free of charge. You can read more about HelpUnicorn <a href="helpunicorn">here</a>.
+                                An online resource uniting IT-specialists and nonprofits thus securing charities with free IT assistance. The ecosystem includes a website, a website builder for welfare funds, and beta versions of mobile apps. It now has over 1000 users, and my team and I keep promoting it in Russia, Belarus, and the US.
                             </div>
                         </div>
                     </div>
@@ -126,7 +132,7 @@
                             <div class="media">
                                 <div class="media-left">
                                     <figure class="image is-96x96">
-                                        <img src="http://neighbors.pythonanywhere.com/static/logo.png" alt="Project Neighbors logo">
+                                        <img src="http://neighbors.pythonanywhere.com/static/logo.png" alt="Project Neighbors logo" style="border: 1px solid white; border-radius: 10px">
                                     </figure>
                                 </div>
                                 <div class="media-content">
@@ -136,7 +142,29 @@
                             </div>
                     
                             <div class="content">
-                                This is a "swapper" for neighbors. I've creted it as my final project in Silicon Valley enterpreneuship program. During the 2020 lockdown, it was topical to have a network of people living next to each other, who can exchange some products with each other (e.g. I give you a Monopoly, and you boil some coffee for me).
+                                A "swapper" social network for neighbor. I made it in 2020 as the final project for the Silicon Valley entrepreneurship workshop. Its idea is to encourage communication among neighbors through "swapping" things. F.i., I can share my Monopoly with you in excange for a cup of boiled coffee (I don't have a coffee machine)
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://raw.githubusercontent.com/aadev151/Towelly/main/public/playground_assets/logo-external.png" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Towelly</p>
+                                    <p class="subtitle is-6"><a href="http://towellyapp.cf" target="_blank">http://towellyapp.cf</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                In the hotel industry, there is a huge amount of unnesecary plastic that could be easily eliminated. For instance, each guest usually has at least two plastic cards - to open the room and to get a beach towel. Towelly is an app that replaces the second card using QR codes. It's a cheap and green alternative for hotels.
                             </div>
                         </div>
                     </div>
@@ -158,7 +186,7 @@
                             </div>
                         
                             <div class="content">
-                                This is a JS web library for creating previews for links on your websites.
+                                This is a JS web library that helps creating link previews on websites.
                                 <br>
                                 <a href="https://aadev151.github.io/prevlink/demo" target="_blank">Demo &rightarrow;</a>
                                 &nbsp;&nbsp;
@@ -184,7 +212,7 @@
                             </div>
                         
                             <div class="content">
-                                An online multiplayer game for Christmas. It only has 2 levels, but you can suggest some new on <a href="https://github.com/aadev151/xmas-quest" target="_blank">Github</a> :)
+                                An online multiplayer game for Christmas. It only has 2 levels, but any new suggestions are welcome on <a href="https://github.com/aadev151/xmas-quest" target="_blank">Github</a> :)
                             </div>
                         </div>
                     </div>
@@ -217,7 +245,7 @@
                             <div class="media">
                                 <div class="media-left">
                                     <figure class="image is-96x96">
-                                        <img src="https://mp3-converter-online.com/buttons/converter.svg">
+                                        <img src="https://img.icons8.com/nolan/450/mp3.png"/>
                                     </figure>
                                 </div>
                                 <div class="media-content">
@@ -227,31 +255,9 @@
                             </div>
                         
                             <div class="content">
-                                This is my first work made for my Yandex IT-courses (final PyQT project). Well, it's in Russian, but I'm currently working on its translation.
-                                <br>
-                                <p style="font-size: 13px; text-align: left;">Image credit: mp3-converter-online.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="VK_Compact_Logo.png">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">A chatbot for food delivery</p>
-                                    <p class="subtitle is-6"><a href="https://github.com/aadev151/ru-foodbot" target="_blank">https://github.com/aadev151/ru-foodbot</a></p>
-                                </div>
-                            </div>
-                        
-                            <div class="content">
-                                There was a period in my life when my Mom delivered food to me every Saturday since I was at school till 7pm. I decided to make some automation for it and start a <a href="https://vk.com" target="_blank">VK</a> bot, sending my lunch wishes to my Mom. It has my settings, but you can easily change them, following the instruction in README. And yes, the project is as well in Russian.
+                                This is my PyQT project for the Yandex IT workshop. It's a desktop app that allows you to import and export tracks, create playlists, and share them with others. It also <a href="/projects/assests/mp3-album-cover.png">supports album covers</a>.
+                                <br><br>
+                                <p style="font-size: 13px; text-align: left;">Image credit: <a target="_blank" href="https://icons8.com/icon/59926/mp3">MP3 icon by Icons8</a></p>
                             </div>
                         </div>
                     </div>
@@ -273,7 +279,97 @@
                             </div>
                         
                             <div class="content">
-                                My second Yandex project. It was inspired by a hit Netflix series, "Squid Game".
+                                My PyGame project for the Yandex workshop. I made it together with <a href="https://github.com/ppprrroooggg" target="_blank">Darya Eremeeva</a>. It is a desktop game inspired by a hit Netflix series, and it has three levels: "Green Light, Red Light", "Sugar Honeycombs", and "Hopscotch". Good luck, and don't be eliminated! 
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://cdn.pixabay.com/photo/2019/04/14/20/05/duck-meet-4127713_1280.jpg" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Duckystyle</p>
+                                    <p class="subtitle is-6"><a href="https://github.com/aadev151/duckystyle" target="_blank">https://github.com/aadev151/duckystyle</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                My Flask project for the Yandex workshop. I also made it together with <a href="https://github.com/ppprrroooggg" target="_blank">Darya Eremeeva</a>. It is a mock auction of DFTs (Duck Functional Tokens) - here you may buy and sell pictures of ducks, both with real money and "website coins". However, if you don't top up your account, you are only limited to the website's collection of DFTs and cannot buy those of other users
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://img.icons8.com/nolan/450/bot.png">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">A chatbot for food delivery</p>
+                                    <p class="subtitle is-6"><a href="https://github.com/aadev151/ru-foodbot" target="_blank">https://github.com/aadev151/ru-foodbot</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                There was a period in my life when my Mom delivered food to me every Saturday since I was at school till 7pm. I decided to make some automation for it and start a <a href="https://vk.com" target="_blank">VK</a> chatbot, sending my lunch wishes to my Mom. The code now has options preset for me, but you can easily change them, following the instruction in README. If you need help with translation, feel free to <a href="/">DM me</a>.
+                                <br><br>
+                                <p style="font-size: 13px; text-align: left;">Image credit: <a target="_blank" href="https://icons8.com/icon/xaquNfre75yC/bot">Bot icon by Icons8</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="http://alexxx.pythonanywhere.com/static/race-game.png" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Racing game</p>
+                                    <p class="subtitle is-6"><a href="https://github.com/aadev151/race-game" target="_blank">https://github.com/aadev151/race-game</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                This is my first desktop game. The game includes three modes: career, multiplayer, and fun. It also supports two languages, and two themes (light and dark).
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="hqbrowser.jpg" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">HQBrowser</p>
+                                    <p class="subtitle is-6"><a href="https://hqbrowser.aadev151.repl.co" target="_blank">https://hqbrowser.aadev151.repl.co</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                This website allows you to search web through different search engines, from Google to Wikipedia
                             </div>
                         </div>
                     </div>
@@ -295,7 +391,7 @@
                             </div>
                         
                             <div class="content">
-                                And final of my more-or-less-large projects is a step-by-step tutorial on how to make a VK chatbot. 
+                                This website includes step-by-step instructions on how to create a VK chatbot
                             </div>
                         </div>
                     </div>
@@ -316,7 +412,7 @@
                             </div>
                     
                             <div class="content">
-                                My team and I are now working on developing an iOS, an Android, and a Huawei app that will have the same functionality as HelpUnicorn website. In fact, the iOS app is finished already, but it's waiting for the funding.
+                                My team and I are now working on developing an iOS, an Android, and a Huawei app that will have the same functionality as the HelpUnicorn website. We already have the beta versions, but they're not yet released to the app stores.
                             </div>
                         </div>
                     </div>
@@ -332,12 +428,54 @@
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-4">HelpUnicorn Telegram bot</p>
+                                    <p class="title is-4">HelpUnicorn chatbots</p>
                                 </div>
                             </div>
                     
                             <div class="content">
-                                We are also developing a Telegram bot with the same features.
+                                We are also developing Telegram, Discord, and VK bots with the same features.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://msk.ros-spravka.ru/upload/iblock/f29/лого.jpg" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Lyceum admissions webpage</p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                I'm now working on the admissions webpage for our Lyceum 1535. Its main feature will be the opportunity to subscribe to receiving weekly email updates.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://play-lh.googleusercontent.com/WFJgS6wkeaFCVFp3CH6mWOd2sRsWvOxILagnw33PFi4KFYnPsaeCGywSVwqJzwrHtJQ=w240-h480-rw" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Заяндекси (Use Yandex)</p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                It will be a website similar to <i>Let Me Google That For You</i>, but in Russian and about the most popular Russian search engine, Yandex.
                             </div>
                         </div>
                     </div>
@@ -345,21 +483,22 @@
                 </div>
 
                 <div id="ideas" hidden>
+
                     <div class="card">
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="quickpay.png" alt="QuickPay logo" style="border-radius: 10px;">
+                                    <figure class="image is-96x96" style="border: 1px solid white; border-radius: 10px;">
+                                        <img src="data:image/png;base64,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">
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-4">QuickPay app</p>
+                                    <p class="title is-4">Food Buzzer</p>
                                 </div>
                             </div>
                     
                             <div class="content">
-                                An app that allows people to make card-to-card transfers with one click. <a href="quickpay" target="_blank">Learn more</a>.
+                                In the fast food industry, recently hyping food buzzers are an extremely cheap thing, but they are made of plastic. I want to create an app capable of replacing them. Using it, clients will create an anonymous chat with the restaurant, which will be deleted as soon as their order is taken. This will help fight the plastic pollution.
                             </div>
                         </div>
                     </div>
@@ -379,7 +518,28 @@
                             </div>
                     
                             <div class="content">
-                                Any person may feel awkward and uncomfortable going to such doctors. It might be a great challenge to get over oneself and tell about your intimate problems to an unknown person. So with this chat, any person will be able to consult with specialists anonymously and see, whether she or he has a serious health problem or it's just something that one can solve herself.
+                                Any person may feel awkward and uncomfortable going to such doctors. It might be a great challenge to get over oneself and tell about intimate problems to an unknown person. With this chat, any person will be able to consult with specialists anonymously and see whether they have a serious health problem or it's just something they can solve themselves.
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="quickpay.png" alt="QuickPay logo" style="border-radius: 10px;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">QuickPay app</p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                An app that will people to make card-to-card transfers with one click. Simply using a QR-code.
                             </div>
                         </div>
                     </div>
@@ -400,7 +560,7 @@
                             </div>
                         
                             <div class="content">
-                                A tool, which will help musicians enhance the quality of their songs or create remixes with AI.
+                                A tool, which will help musicians enhance the quality of their songs and create remixes and music video using AI.
                             </div>
                         </div>
                     </div>

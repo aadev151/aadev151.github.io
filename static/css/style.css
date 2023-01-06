@@ -92,3 +92,7 @@ html {
 .social-icon {
     display: inline-block;
 }
+
+.social-icon:hover {
+    cursor: none;
+}

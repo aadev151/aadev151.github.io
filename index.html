@@ -2,100 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://raw.githubusercontent.com/aadev151/aadev151.github.io/master/my_logo.png">
-
-    <link rel="stylesheet" href="static/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <title>Anisimov Aleksandr</title>
 
 </head>
 
 <body>
 
-    <div class="cursor">
-
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <h1 style="font-family: monospace">Website under development</h1>
+        <p style="font-family: monospace; text-align: center;">
+            <a href="https://aadev151.github.io/ru-cv">CV &rarr;</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://aadev151.github.io/ru-cv#contact">Contact me &rarr;</a>
+        </p>
     </div>
 
-    <section class="hero is-fullheight main">
-
-        <div class="hero-body">
-
-            <div class="left">
-
-                <h1 class="cursor-scale hello">Hey!!!</h1>
-                <h2 class="cursor-scale about">My name is Alex. I'm a developer 👨‍💻</h2>
-                <h2 class="cursor-scale about">And I love blue color.</h2>
-
-                <br><br><br>
-
-                <a class="button" href="/projects">My projects &rightarrow;</a>
-                <br>
-                <a class="button" href="mailto:vomisina.xela@gmail.com">Contact me &rightarrow;</a>
-
-                <br><br>
-
-                <a class="button" id="showpic">Show my image</a>
-
-                <br><br><br><br>
-
-                <div class="social">
-                    <a href="https://twitter.com/aadev151" target="_blank" class="social-icon">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="https://github.com/aadev151" target="_blank" class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="https://vk.com/aadev151" target="_blank" class="social-icon">
-                        <i class="fab fa-vk"></i>
-                    </a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="https://instagram.com/_hell.o_0" target="_blank" class="social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>     
-                </div>
-
-            </div>
-
-            <div class="right">
-
-                <img src="static/img/me.jpeg" alt="My image" id="picture" class="image">
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <script>
-        var btn = document.querySelectorAll('#showpic')
-
-        btn.forEach(link => {
-            link.addEventListener('mouseleave', () => {
-                $('#picture').fadeOut();
-            })
-            link.addEventListener('mousemove', () => {
-                $('#picture').fadeIn();
-            })
-        })
-    </script>
-
-    <script>
-        if ($(document).width() <= 1070) { window.location.href = 'https://aadev151.tech/mobile' }
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="static/js/main.js"></script>
-
+    
 </body>
 
 </html>

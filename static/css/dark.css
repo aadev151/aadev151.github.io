@@ -1,0 +1,43 @@
+.body.dark {
+    background-color: #171717;
+    color: #eee;
+}
+.body.dark .theme-switcher {
+    background-color: #333;
+    border-color: #444;
+}
+.body.dark .switcher-circle {
+    transform: translateX(calc(var(--switcher-width) - var(--switcher-height)));
+}
+
+
+.body.dark .role {
+    color: #555;
+}
+
+.body.dark a:hover {
+    color: #fff;
+}
+
+.body.dark .content {
+    background-color: #252525;
+}
+
+.body.dark div.skipto select {
+    background-color: #222;
+    color: #eee;
+}
+
+.body.dark .link {
+    background-color: #313131
+}
+.body.dark .link:hover {
+    box-shadow: rgba(243, 243, 229, 0.1) 0px 4px 16px, rgba(243, 243, 229, 0.1) 0px 8px 32px;
+}
+
+.body.dark .cookie-banner {
+    color: #111;
+}
+.body.dark .cookie-banner a:hover {
+    color: #333;
+}

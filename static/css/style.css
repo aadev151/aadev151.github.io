@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;900&display=swap');
+
+
+:root {
+    --switcher-height: 30px;
+    --switcher-width: 70px;
+    --switcher-padding: 0.3em;
+    --content-box-border-width: -3px;
+    --content-box-border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.body {
+    transition: background-color 1s ease, color 1s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #111;
+    quotes: '“' '”';
+}
+
+.noscript {
+    color: #111;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+}
+
+.noscript h1 {
+    font-size: 45px;
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.theme-switcher {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: var(--switcher-width);
+    height: var(--switcher-height);
+    padding: var(--switcher-padding);
+    background-color: #ddd;
+    border: 1px solid #eee;
+    border-radius: var(--switcher-height);
+    transition: background-color 1s ease, border-color 1s ease;
+}
+
+.theme-switcher:hover {
+    cursor: pointer;
+}
+
+.switcher-circle {
+    background-color: #fff;
+    width: var(--switcher-height);
+    height: var(--switcher-height);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 350px;
+    min-height: 100vh;
+}
+
+.me {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    pointer-events: none;
+    background-image: url('../img/me.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-size: 54px;
+    font-weight: 900;
+    margin-bottom: 0;
+    line-height: 50px;
+}
+
+.role {
+    font-size: 19px;
+    font-weight: 700;
+    color: #aaa;
+    margin-bottom: 0;
+    transition: color 1s ease;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.quote:before {
+    content: open-quote;
+    font-size: larger;
+}
+.quote:after {
+    content: close-quote;
+    font-size: larger;
+}
+
+div.featured {
+    list-style-type: none;
+    width: 160px;
+    text-align: left;
+}
+div.featured span {
+    display: block;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(48, 48, 192);
+}
+a:hover {
+    color: #000;
+}
+
+div.social {
+    list-style-type: none;
+    font-size: 21px;
+    margin-top: 25px;
+}
+div.social span {
+    display: inline-block;
+    margin-right: 10px;
+}
+ul.social li:last-child {
+    margin-right: 0;
+}
+
+.scroll, div.skipto label {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.scroll a {
+    color: inherit;
+}
+.scroll a:hover {
+    cursor: pointer;
+}
+
+div.tabs span {
+    border: 2px solid pink;
+    border-radius: 7px;
+    padding: 0.2em;
+}
+
+div.skipto select {
+    font-size: 20px;
+    background-color: #eee;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 0.3em;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+.content {
+    position: relative;
+    text-align: left;
+    background-color: #eee;
+    margin-top: 35px;
+    padding: 0.7em;
+    transition: background-color 1s ease;
+    border: none;
+    border-radius: var(--content-box-border-radius);
+    height: 500px;
+    width: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 19px;
+}
+
+.content h1 {
+    font-size: 27px;
+}
+
+.content h2 {
+    font-size: 24px;
+}
+
+.link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #dcdcdc;
+    border-radius: 7px;
+    padding: 0.3em 1em;
+    width: min(80%, 450px);
+    transition: 0.4s;
+}
+
+.link:hover {
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.link h1 {
+    font-size: 22px;
+}
+
+.link p {
+    font-size: 17px;
+}
+
+.skills {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+@media screen and (max-width: 590px) {
+    .skills {
+        padding-left: 15px;
+    }
+}
+
+.skills li {
+    background-color: plum;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.4em;
+    border-radius: 10px;
+}
+
+.cookie-banner {
+    position: fixed;
+    z-index: 7500;
+    bottom: 40px;
+    right: 60px;
+    padding: 1em;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    background-color: #eee;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    color: #111;
+}
+
+.cookie-banner h1 {
+    font-size: 21px;
+}
+
+.cookie-banner .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 17px;
+}
+
+.cookie-banner .buttons a:hover {
+    cursor: pointer;
+    color: #333;
+}
+
+.cookie {
+    position: fixed;
+    z-index: 9000;
+}
+
+.cookie-message {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9999;
+    color: white;
+}
+
+.cookie-message h1 {
+    font-size: 39px;
+}
+
+.cookie-message button {
+    border: none;
+    background-color: aquamarine;
+    padding: 0.55em;
+    border-radius: 5px;
+    font-size: 21px;
+    transition: 0.3s;
+}
+.cookie-message button:hover {
+    cursor: pointer;
+    background-color: rgb(117, 234, 195);
+}
+
+.cookie-message p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 765px) {
+    .cookie-banner {
+        bottom: 20px;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .theme-switcher {
+        right: 10px;
+    }
+}

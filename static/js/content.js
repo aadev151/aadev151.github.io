@@ -62,7 +62,7 @@ const contentByIndexes = [
         I strive to bring things to perfection. In other words, I'm into <strong>optimizing</strong>. I love the feeling when I know
         that every single detail on a website has its own place.
     </p>
-    <h2>hostedby.aadev151.tech</h2>
+    <h2>aadev151.github.io/hostedbyme</h2>
     <p>
         I'm committed to making the world a better place, however hackneyed this may sound. I actively promote my idea of
         "helpful coding" &mdash; that is, using programming for social and environmental good. Along with HostedByAadev151, which is
@@ -176,7 +176,7 @@ const contentByIndexes = [
             Full-stack. May require VPN
         </p>
     </div>
-    <div class="link" onclick="redirect('https://arkadiya.hostedby.aadev151.tech')">
+    <div class="link" onclick="redirect('https://aadev151.github.io/hostedbyme/arkadiya')">
         <h1>Astrologer website</h1>
         <p>
             Front-end. May require VPN
@@ -433,6 +433,11 @@ function turnSection(sectionIndex) {
     contentSelector.selectedIndex = sectionIndex
     content.innerHTML = contentByIndexes[sectionIndex]
     content.scrollTop = 0
+}
+
+
+function redirect(url) {
+    window.open(url, '_blank')
 }
 
 

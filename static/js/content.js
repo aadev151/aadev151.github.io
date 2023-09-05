@@ -135,7 +135,7 @@ const contentByIndexes = [
     <h2>Bachelor of Science, Software Engineering, Rose-Hulman Institute of Technology, 2023-2027</h2>
     <p>
         Related courses freshman year: Object-Oriented Software Development, Introduction to Computer
-        Systems Design, Introduction to Digital Systems, Introduction to Entrepreneurship, Calculus III
+        Systems Design, Introduction to Digital Systems, Introduction to Entrepreneurship, Practical Security I, Calculus III
     </p>
     <h2>Lyceum 1535, Moscow, Russia (high school, 2020-2023)</h2>
     <p>
@@ -201,7 +201,7 @@ const contentByIndexes = [
     </ul>
     <div class="link" onclick="redirect('https://helpunicorn.pythonanywhere.com')">
         <h1>HelpUnicorn</h1>
-        <p>https://helpunicorn.pythonanywhere.com</p>
+        <p>https://<wbr>helpunicorn.<wbr>pythonanywhere.<wbr>com</p>
     </div>
 
     <h2>AntiGPT</h2>
@@ -230,7 +230,7 @@ const contentByIndexes = [
     </ul>
     <div class="link" onclick="redirect('https://gitbub.com/aadev151/kitty-sneakers')">
         <h1>Kitty Sneakers</h1>
-        <p>https://gitbub.com/aadev151/kitty-sneakers</p>
+        <p>https://gitbub.com/<wbr>aadev151/<wbr>kitty-sneakers</p>
     </div>
 
     <h2>Duckystyle</h2>
@@ -245,7 +245,7 @@ const contentByIndexes = [
     </ul>
     <div class="link" onclick="redirect('https://gitbub.com/aadev151/duckystyle')">
         <h1>Duckystyle</h1>
-        <p>https://gitbub.com/aadev151/duckystyle</p>
+        <p>https://gitbub.com/<wbr>aadev151/<wbr>duckystyle</p>
     </div>
 
     <h2>Squid Pygame</h2>
@@ -261,7 +261,7 @@ const contentByIndexes = [
     </ul>
     <div class="link" onclick="redirect('https://gitbub.com/aadev151/squid-pygame')">
         <h1>Squid Pygame</h1>
-        <p>https://gitbub.com/aadev151/squid-pygame</p>
+        <p>https://gitbub.com/<wbr>aadev151/<wbr>squid-pygame</p>
     </div>
 
     <h2>MP3 Player</h2>
@@ -277,7 +277,7 @@ const contentByIndexes = [
     </ul>
     <div class="link" onclick="redirect('https://gitbub.com/aadev151/mp3-player')">
         <h1>MP3 Player</h1>
-        <p>https://gitbub.com/aadev151/mp3-player</p>
+        <p>https://gitbub.com/<wbr>aadev151/<wbr>mp3-player</p>
     </div>
 
     <h2>prevlink.js</h2>
@@ -289,7 +289,7 @@ const contentByIndexes = [
     </ul>
     <div class="link" onclick="redirect('https://aadev151.github.io/prevlink/')">
         <h1>prevlink.js</h1>
-        <p>https://aadev151.github.io/prevlink/r</p>
+        <p>https://<wbr>aadev151.github.io/<wbr>prevlink/</p>
     </div>
 
     <h2>Food delivery chatbot</h2>
@@ -305,7 +305,7 @@ const contentByIndexes = [
     </ul>
     <div class="link" onclick="redirect(https://github.com/aadev151/ru-foodbot')">
         <h1>Food delivery chatbot</h1>
-        <p>https://github.com/aadev151/ru-foodbot</p>
+        <p>https://github.com/<wbr>aadev151/<wbr>ru-foodbot</p>
     </div>
     `,
 
@@ -389,6 +389,14 @@ const contentByIndexes = [
 
     <h2>Rose-Hulman Institute of Technology</h2>
     <ul>
+        <li>
+            <p><strong>Computer Security Club</strong></p>
+            <p>
+                ESCALATE is a living-learning program that develops the entrepreneurial mindset in students.
+                Topics studied include identifying market opportunities, developing creative and innovative solutions,
+                and developing approaches to capture value in the marketplace.
+            </p>
+        </li>
         <li>
             <p><strong>ESCALATE: Engineering Student Community Actively Learning Advanced Technical Entrepreneurship</strong></p>
             <p>

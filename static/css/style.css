@@ -124,7 +124,6 @@ html {
 div.featured {
     list-style-type: none;
     width: 160px;
-    text-align: left;
 }
 div.featured span {
     display: block;
@@ -210,6 +209,7 @@ div.skipto select {
     padding: 0.3em 1em;
     width: min(80%, 450px);
     transition: 0.4s;
+    overflow-wrap: break-word;
 }
 
 .link:hover {

@@ -392,9 +392,8 @@ const contentByIndexes = [
         <li>
             <p><strong>Computer Security Club</strong></p>
             <p>
-                ESCALATE is a living-learning program that develops the entrepreneurial mindset in students.
-                Topics studied include identifying market opportunities, developing creative and innovative solutions,
-                and developing approaches to capture value in the marketplace.
+                Computer Security Club at Rose-Hulman educates its members about the cybersecurity field in CompSci
+                through activities, guest speakers, conferences, and competitions.
             </p>
         </li>
         <li>

@@ -198,7 +198,7 @@ const contentByIndexes = [
     `
     <h1>Research</h1>
     <p>
-        I am currently (<strong>Sep 2023 - Present</strong>) involved in undergraduate Computer Science Education research with Dr. Joseph Hollingsworth. Highlights:
+        I am currently (<strong>Oct 2023 - Present</strong>) involved in undergraduate Computer Science Education research with Dr. Joseph Hollingsworth. Highlights:
     </p>
     <ul>
         <li>Research Automating Methods to Overcome Learning Obstacles in Computer Science</li>

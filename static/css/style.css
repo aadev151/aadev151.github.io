@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;900&display=swap');
 
 
 :root {
@@ -198,7 +198,15 @@ div.skipto select {
 }
 
 .content h2 {
-    font-size: 24px;
+    font-size: 23px;
+}
+
+.content h3 {
+    font-size: 19px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .link {

@@ -5,7 +5,7 @@ const contentByIndexes = [
         Hi, my name is Alex; I'm a Software Engineering major and a 
         <a onclick="turnSection(7)" href="javascript:;">Noblitt Scholar</a> at Rose-Hulman Institute of Technology.
         I'm an innovative, open-minded, and creative person willing to do meaningful things.
-        I'm passionate about lifelong learning and want to become proficient in my field one day.
+        I'm passionate about lifelong learning and improving my skills and knowledge.
         <br>
         <a onclick="turnSection(1)" href="javascript:;">More about me &rightarrow;</a>
     </p>
@@ -26,11 +26,6 @@ const contentByIndexes = [
             An example of what I made as a freelancer (front-end).
             The webpage may require VPN because it is based on a Russian server.
         </p>
-    </div>
-
-    <div class="link" onclick="redirect('https://helpunicorn.pythonanywhere.com')">
-        <h1>HelpUnicorn</h1>
-        <p>My biggest out-of-the-classroom project I founded and led for two years</p>
     </div>
     `,
 
@@ -85,9 +80,10 @@ const contentByIndexes = [
         <li>Java</li>
         <li>JavaScript</li>
         <li>jQuery</li>
-        <li>c++</li>
+        <li>C++</li>
         <li>Swift</li>
         <li>C# and ASP.NET</li>
+        <li>C++ MFC library</li>
     </ul>
 
     <h2>Technical:</h2>
@@ -103,6 +99,7 @@ const contentByIndexes = [
     <ul class="skills">
         <li>Relational databases</li>
         <li>iOS development</li>
+        <li>IoT</li>
     </ul>
 
     <h2>Python modules:</h2>
@@ -130,12 +127,7 @@ const contentByIndexes = [
     <h2>Bachelor of Science, Software Engineering, Rose-Hulman Institute of Technology, 2023-2027</h2>
     <p>
         Related courses freshman year: Data Structures and Algorithm Analysis, Object-Oriented Software Development,
-        Computer Architecture, Practical Security, Introduction to Entrepreneurship
-    </p>
-    <h2>Lyceum 1535, Moscow, Russia (high school, 2020-2023)</h2>
-    <p>
-        General secondary education with concentration in Software Engineering. Graduated with
-        <strong>5.0/5.0 GPA and 2 gold medals for outstanding academic achievements</strong>
+        Computer Architecture, Intro to Digital Systems, Practical Security, Introduction to Entrepreneurship
     </p>
 
     <h2>Google Cybersecurity Professional Certificate, Expected February 2024</h2>
@@ -151,19 +143,32 @@ const contentByIndexes = [
     `
     <h1>Work experience</h1>
 
-    <h2>Software Intern, Wi-Tronix, Bolingbrook, IL, Summer 2024</h2>
+    <h2>Software Intern, Wi-Tronix</h2>
+    <h3>Bolingbrook, IL, Summer 2024</h3>
+    <p>
+        Expected skills by the end of the program:
+        <ul class="skills">
+            <li>IoT</li>
+            <li>Systems Programming</li>
+            <li>SAFe</li>
+        </ul>
+    </p>
 
-    <h2>Software Engineering Intern, Rose-Hulman Ventures, Terre Haute, IN, Dec 2023 - Present</h2>
+    <h2>Software Engineering Intern, Rose-Hulman Ventures</h2>
+    <h3>Terre Haute, IN, Dec 2023 - Present</h3>
     <ul>
-        <li>Building a production website with ASP.NET, C#, and SignalR using Visual Studio and Microsoft SQL Server Management Studio</li>
-        <li>Collaborate with a team of 35 people to efficiently bring the solution to the customer</li>
+        <li>Migrate existing company’s website to ASP.NET 8.0, update interface and functionality</li>
+        <li>Test software other developers and I write and fix bugs happening in production</li>
+        <li>Work with relational databases via ASP.NET models and SQL Server Management Studio</li>
+        <li>Fixed 3 bugs that significantly improved user experience on the website</li>
     </ul>
 
     <h2>
         I also currently work part-time as a receptionist at the Rose-Hulman Sports & Recreation Center.
     </h2>
 
-    <h2>Freelance Full-Stack Web Developer, March 2020 - June 2023</h2>
+    <h2>Freelance Full-Stack Web Developer</h2>
+    <h3>March 2020 - June 2023</h3>
     <ul>
         <li>Developed landing pages, personal web pages, business card sites, and corporate websites. Created 10+ solutions</li>
         <li>Used HTML, CSS, and JavaScript along with third-party modules, such as intl-tel-input.js, bulma.css, and others, for the front end</li>
@@ -174,7 +179,7 @@ const contentByIndexes = [
 
     <h2>Featured work:</h2>
     <p>
-        Some of my most recent works include these web pages:
+        Some of my most recent works as a freelancer include these web pages:
     </p>
     <div class="link" onclick="redirect('https://nogotochki.xyz')">
         <h1>Nail salon web page</h1>
@@ -339,7 +344,7 @@ const contentByIndexes = [
     </p>
 
     <h2>Regional Resource Center</h2>
-    <i>Nov 2020 - Jul 2023 | Moscow, Russia; Ryazan Region, Russia</i>
+    <i>Nov 2020 - Jul 2023</i>
     <p>
         Helped the community in different ways:
     </p>
@@ -350,8 +355,8 @@ const contentByIndexes = [
         <li>Organized Subbotniks (clean-up events) to clean parks and children's playgrounds off litter</li>
     </ul>
 
-    <h2>Lyceum 1535r</h2>
-    <i>Sep 2021 - May 2023 | Moscow, Russia</i>
+    <h2>Lyceum 1535</h2>
+    <i>Sep 2021 - May 2023</i>
     <ul>
         <li>Organized events for annual charity fairs for 2 years</li>
         <li>Helped with sorting the information at the school's World War II museum</li>
@@ -381,13 +386,21 @@ const contentByIndexes = [
     <h1>Leadership</h1>
     <h2>Rose-Hulman</h2>
     <ul>
-        <li>
+        <!--<li>
         <p><strong>Open Source Club, Vice President</strong></p>
             <p>
                 I am the co-founder of Rose-Hulman Open Source Club, which is a place where students can
                 interested in coding can discuss their projects, find teammates, or just hang out with
                 like-minded folks. We also provide funding for software engineering side projects.
                 <i>Starting Spring 2024</i>
+            </p>
+        </li>-->
+        <li>
+            <p><strong>Lambda Chi Alpha, Alumni Chairman</strong></p>
+            <p>
+                I plan, organize, and execute quarterly networking meetings with chapter alumni, facilitate alumni relations
+                with Rose-Hulman, including media and email requests, and help alumni raise money for their
+                charity events.
             </p>
         </li>
         <li>
@@ -448,13 +461,13 @@ const contentByIndexes = [
                 of workshops for Brownies and Juniors Girl Scouts. Our next event is for Seniors and Ambassadors Girl Scouts
             </p>
         </li>
-        <li>
+        <!--<li>
             <p><strong>Computer Security Club</strong></p>
             <p>
                 We meet weekly to discuss different topics related to cybersecurity. We also participate in team competitions,
                 both red teaming and blue teaming, and have weekly CTF challenges.
             </p>
-        </li>
+        </li>-->
         <li>
             <p><strong>ESCALATE: Engineering Student Community Actively Learning Advanced Technical Entrepreneurship</strong></p>
             <p>

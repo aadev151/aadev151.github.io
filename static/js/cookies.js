@@ -54,7 +54,7 @@ function startCookieFall() {
             const cookieMessage = document.createElement('div')
             cookieMessage.classList.add('cookie-message')
             cookieMessage.innerHTML = `
-            <h1>Still fewer than an average website uses</h1>
+            <h1>Still less than an average website uses</h1>
             <button onclick="location.reload()">Reload the page</button>
             <p>Cookie image attribution: <a href="https://icons8.com/icon/Ic8ZD97exiAD/cookie" target="_blank">icons8.com</a></p>
             `

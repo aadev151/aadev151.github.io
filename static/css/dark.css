@@ -12,7 +12,7 @@
 
 
 .body.dark .role {
-    color: #555;
+    color: #666666;
 }
 
 .body.dark a:hover {
@@ -32,7 +32,7 @@
     background-color: #313131
 }
 .body.dark .link:hover {
-    box-shadow: rgba(243, 243, 229, 0.1) 0px 4px 16px, rgba(243, 243, 229, 0.1) 0px 8px 32px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .body.dark .cookie-banner {

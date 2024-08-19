@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
 
 
 :root {
@@ -101,9 +102,10 @@ html {
 }
 
 .role {
+    font-family: "Nunito", sans-serif;
     font-size: 19px;
-    font-weight: 700;
-    color: #aaa;
+    font-weight: 400;
+    color: #888;
     margin-bottom: 0;
     transition: color 1s ease;
 }
@@ -199,11 +201,13 @@ div.skipto select {
 
 .content h2 {
     font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
 .content h3 {
-    font-size: 19px;
-    margin-top: -10px;
+    margin-top: 1px;
+    font-size: 18px;
     margin-bottom: 5px;
     font-weight: 500;
     font-style: italic;
@@ -222,14 +226,16 @@ div.skipto select {
 
 .link:hover {
     cursor: pointer;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .link h1 {
     font-size: 22px;
+    margin-bottom: 5px;
 }
 
 .link p {
+    margin-top: 0;
     font-size: 17px;
 }
 
@@ -267,6 +273,7 @@ div.skipto select {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-family: monospace;
     background-color: #eee;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

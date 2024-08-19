@@ -2,7 +2,7 @@ const content = document.querySelector('.content')
 const contentByIndexes = [
     `
     <p>
-        Hi, my name is Alex; I'm a Software Engineering major and a 
+        Hi, my name is Alex. I'm a Software Engineering major and a 
         <a onclick="turnSection(7)" href="javascript:;">Noblitt Scholar</a> at Rose-Hulman Institute of Technology.
         I'm an innovative, open-minded, and creative person willing to do meaningful things.
         I'm passionate about lifelong learning and improving my skills and knowledge.
@@ -30,11 +30,7 @@ const contentByIndexes = [
     `,
 
     `
-    <h1>About me (aka What is aadev151?)</h1>
-    <h2>
-        <span style="color:red">a</span><span style="color:orange">a</span><span style="color:green">dev</span>
-        stands for <span style="color:red">A</span>lex <span style="color:orange">A</span>nisimov is a <span style="color:green">dev</span>eloper
-    </h2>
+    <h1>About me</h1>
     <p>
         I'm passionate about coding and automating things. It all started with a small program written in PascalABC.
         I've created a simple electronic watch with a couple of lines of code. But that opened up a whole new world of
@@ -42,25 +38,17 @@ const contentByIndexes = [
         relational databses</strong>, and a lot more things I couldn't even imagine doing back that day. And I want to learn more.
         I'm passionate about the idea of lifelong learning and curious about where my coding journey will lead me.
     </p>
-    <h2>
-        151 because An<span style="color:green;font-family:monospace">ISI</span>mov lookes like An<span style="color:green;font-family:monospace">151</span>mov
-    </h2>
     <p>
         I love <strong>thinking outside the box</strong> and using creative approach to things. When I solve problems,
         I try to look for things other people don't see or miss. 
     </p>
-    <h2>
-        All together, <span style="color:orange">aadev151</span> is a truly unique character set, which allows me to represent myself.
-        I have never came across a website that had aadev151 taken as a username, and even aadev151.com is available for registration!
-    </h2>
     <p>
-        I strive to bring things to perfection. In other words, I'm into <strong>optimizing</strong>. I love the feeling when I know
+        I strive to bring things to perfection. In other words, I'm into optimization. I love the feeling when I know
         that every single detail on a website has its own place.
     </p>
-    <h2>aadev151.github.io/hostedbyme</h2>
     <p>
         I'm committed to making the world a better place, however hackneyed this may sound. I actively promote my idea of
-        "helpful coding" &mdash; that is, using programming for social and environmental good. Along with HostedByAadev151, which is
+        "helpful coding" &mdash; that is, using programming for social and environmental good. Along with HostedByAlexAnisimov, which is
         a free hosting for those who cannot afford buying a paid plan, I have several projects and project ideas embracing this
         concept. As a bottom line, <strong>I would really love to work on something meaningful</strong>.
     </p>
@@ -98,8 +86,8 @@ const contentByIndexes = [
     <p>I have prior experience with:</p>
     <ul class="skills">
         <li>Relational databases</li>
+        <li>Internet of Things</li>
         <li>iOS development</li>
-        <li>IoT</li>
     </ul>
 
     <h2>Python modules:</h2>
@@ -126,16 +114,22 @@ const contentByIndexes = [
     <h1>Education</h1>
     <h2>Bachelor of Science, Software Engineering, Rose-Hulman Institute of Technology, 2023-2027</h2>
     <p>
-        Related courses freshman year: Data Structures and Algorithm Analysis, Object-Oriented Software Development,
-        Computer Architecture, Intro to Digital Systems, Practical Security, Introduction to Entrepreneurship
+        Related courses: Data Structures and Algorithm Analysis, Object-Oriented Software Development,
+        Software Project Management, Computer Architecture, Practical Security II, Intro to Systems Programming,
+         Intro to Digital Systems, Intro to Entrepreneurship, Programming in the Community
     </p>
+    <h2>Master of Engineering Management, Rose-Hulman Institute of Technology, exp. 2025-2027</h2>
 
-    <h2>Google Cybersecurity Professional Certificate, Expected February 2024</h2>
+    <h1>Certifications</h1>
+    <ul>    
+        <li>Certified SAFe 6 Agilist, Jun 2024</li>
+        <li>Google Cybersecurity Professional Certificate, Mar 2024</li>
+    </ul>
 
-    <h2>Online workshops from Yandex (Russian Google counterpart):</h2>
+    <h1>Online workshops from Yandex (Russian Google counterpart):</h1>
     <ul>
         <li>Python programming language basics, September 2020 - May 2021</li>
-        <li>Industrial programming in Python, September 2021 - May 2023, graduated with honors</li>
+        <li>Industrial and Object-Oriented Programming in Python, September 2021 - May 2023, graduated with honors</li>
         <li>Django, October 2022 - December 2022</li>
     </ul>
     `,
@@ -144,31 +138,55 @@ const contentByIndexes = [
     <h1>Work experience</h1>
 
     <h2>Software Intern, Wi-Tronix</h2>
-    <h3>Bolingbrook, IL, Summer 2024</h3>
+    <h3>Bolingbrook, IL, Jun - Aug 2024</h3>
     <p>
-        Expected skills by the end of the program:
         <ul class="skills">
-            <li>IoT</li>
-            <li>Systems Programming</li>
-            <li>SAFe</li>
+            <li>Internet of Things</li>
+            <li>Embedded application development</li>
+            <li>C++</li>
+            <li>SAFe Agile</li>
+            <li>Code investigation</li>
         </ul>
     </p>
-
-    <h2>Software Engineering Intern, Rose-Hulman Ventures</h2>
-    <h3>Terre Haute, IN, Dec 2023 - Present</h3>
     <ul>
-        <li>Migrate existing company’s website to ASP.NET 8.0, update interface and functionality</li>
-        <li>Test software other developers and I write and fix bugs happening in production</li>
-        <li>Work with relational databases via ASP.NET models and SQL Server Management Studio</li>
-        <li>Fixed 3 bugs that significantly improved user experience on the website</li>
+        <li>Spearheadied development of embedded software decoding real-time signals from an event recorder over Ethernet to integrate the existing codebase with new customer’s specs and ensure safe rail operations in New York and Newark</li>
+        <li>Took initiative to take on extra user stories helping teammates or pulling tasks from future iterations and timely deliver them ensuring they are not moved to the next iteration</li>
+        <li>Saved a module from a bug I had made by creating thorough and effective unit tests; during integration testing on my code, identified a bug another team had made</li>
     </ul>
 
-    <h2>
-        I also currently work part-time as a receptionist at the Rose-Hulman Sports & Recreation Center.
-    </h2>
+    <h2>Software Engineering Intern, Rose-Hulman Ventures</h2>
+    <h3>Terre Haute, IN, Dec 2023 - May 2024</h3>
+    <p>
+        <ul class="skills">
+            <li>ASP.NET</li>
+            <li>Relational databases</li>
+            <li>SQL Server Management Studio</li>
+            <li>Blob cloud storage</li>
+            <li>Code investigation</li>
+        </ul>
+    </p>
+    <ul>
+        <li>Modernized company’s website by migrating some parts to ASP.NET Core and enhancing the interface and functionality to provide a seamless and engaging user experience</li>
+        <li>Moved local static files to the cloud to enhance scalability and provide more efficient data management and used Azure Blob Storage API to access the files from the web application</li>
+        <li>Used ASP.NET models and SQL Server Management Studio to ensure relational database follows new requirements</li>
+        <li>Performed usability and regression testing to identify and fix bugs in development and production and ensure a streamlined user experience</li>
+        <li>Investigated issues in the code I had never worked with, took responsibility for the bugs, and in 90% of cases, was able to rectify the issues prior to customer noticing them</li>
+    </ul>
+
+    <h2>General Staff (Part-Time), Rose-Hulman Sports & Recreation Center</h2>
+    <h3>Terre Haute, IN, Dec 2023 - Present</h3>
 
     <h2>Freelance Full-Stack Web Developer</h2>
     <h3>March 2020 - June 2023</h3>
+    <p>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+        </ul>
+    </p>
     <ul>
         <li>Developed landing pages, personal web pages, business card sites, and corporate websites. Created 10+ solutions</li>
         <li>Used HTML, CSS, and JavaScript along with third-party modules, such as intl-tel-input.js, bulma.css, and others, for the front end</li>
@@ -370,6 +388,9 @@ const contentByIndexes = [
     <h2>Rose-Hulman Institute of Technology</h2>
     <ul>
         <li>
+            <p><strong>3x Dean's List</strong></p>
+        </li>
+        <li>
             <p>
                 Noblitt Scholar, <strong>1/29 freshman recipients</strong>
             </p>
@@ -395,6 +416,12 @@ const contentByIndexes = [
                 <i>Starting Spring 2024</i>
             </p>
         </li>-->
+        <li>
+            <p><strong>Rose Propulsion Laboratory, Lead Software Developer</strong></p>
+            <p>
+                Expected start: Fall 2024
+            </p>
+        </li>
         <li>
             <p><strong>Lambda Chi Alpha, Alumni Chairman</strong></p>
             <p>
@@ -482,8 +509,8 @@ const contentByIndexes = [
     `
     <h1>Contact me</h1>
     <p>
-        If you want to reach out to me, be that about my software engineering experience or funny panda videos, feel free
-        to send me an email. My email address is <a href="mailto:anisima@rose-hulman.edu">anisima@rose-hulman.edu</a>
+        If you want to reach out to me and discuss my software engineering experience or funny panda videos, feel free
+        to send me an email. My email address is <a href="mailto:alex.anisimov@rose-hulman.edu">alex.anisimov@rose-hulman.edu</a>
     </p>
     <p>
         Here are some other ways to reach out to me:
@@ -492,7 +519,6 @@ const contentByIndexes = [
         <li><a href="tel:+18125433024" target="_blank">812-543-3024</a></li>
         <li><a href="https://wa.me/18125433024" target="_blank">WhatsApp</a></li>
         <li><a href="https://linkedin.com/in/aleksandr-anisimov" target="_blank">LinkedIn</a></li>
-        <li><a href="https://snapchat.com/add/aadev151" target="_blank">Snapchat</a></li>
     </ul>
     `
 ]

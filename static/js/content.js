@@ -12,7 +12,7 @@ const contentByIndexes = [
 
     <h1>Featured links</h1>
 
-    <div class="link" onclick="redirect('https://nogotochki.xyz')">
+    <div class="link" onclick="redirect('http://nogotochki.xyz')">
         <h1>Nail salon web page</h1>
         <p>
             An example of what I made as a freelancer (full-stack).
@@ -20,7 +20,7 @@ const contentByIndexes = [
         </p>
     </div>
 
-    <div class="link" onclick="redirect('https://nogotochki.xyz')">
+    <div class="link" onclick="redirect('https://aadev151.github.io/hostedbyme/arkadiya')">
         <h1>Astrologer website</h1>
         <p>
             An example of what I made as a freelancer (front-end).
@@ -199,7 +199,7 @@ const contentByIndexes = [
     <p>
         Some of my most recent works as a freelancer include these web pages:
     </p>
-    <div class="link" onclick="redirect('https://nogotochki.xyz')">
+    <div class="link" onclick="redirect('http://nogotochki.xyz')">
         <h1>Nail salon web page</h1>
         <p>
             Full-stack. May require VPN
